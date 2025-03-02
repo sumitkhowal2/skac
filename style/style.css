@@ -1,25 +1,31 @@
 :root {
-    --basic-color:#b88a4d;
+    --basic-color: #870e0b;
     --primary-color: #3498db;
     --secondary-color: #2ecc71;
     --text-color: #000000;
     --background-color: #f4f4f4;
 }
-.header-top{
+
+.header-top {
     background-color: var(--basic-color);
 }
-.center-slog{
+
+.center-slog {
     font-family: "Dancing Script", serif;
 }
+
 .navbar {
     background-color: #ffffff;
-    padding: 15px;
+    padding: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
 .navbar-brand {
     font-size: 24px;
     font-weight: bold;
-    color: var(--basic-color); 
+    color: var(--basic-color);
 }
+
 .navbar-nav .nav-link {
     color: #000000;
     font-size: 18px;
@@ -27,6 +33,7 @@
     position: relative;
     transition: all 0.3s ease-in-out;
 }
+
 .navbar-nav .nav-link:hover {
     color: var(--basic-color);
 }
@@ -43,9 +50,11 @@
     left: 50%;
     transform: translateX(-50%);
 }
+
 .navbar-nav .nav-link:hover::after {
     width: 80%;
 }
+
 .dark-overlay {
     position: absolute;
     top: 0;
@@ -55,51 +64,149 @@
     background: rgba(0, 0, 0, 0.5);
     z-index: 1;
 }
+
 .carousel-caption {
     position: absolute;
     z-index: 2;
 }
-.footer{
+
+.footer {
     color: #fff;
     background-color: var(--text-color);
 }
 
-.footer-bottom{
+.footer-bottom {
     background-color: var(--text-color);
     border-top: 1px solid var(--basic-color);
 }
-.email-section{
+
+.email-section {
     background-color: #7b7b7b;
-    border-radius: 10px ;
+    border-radius: 10px;
 }
 
 
 /* //whatsapp-notification */
 .whatsapp-notification {
     position: fixed;
-    right: 20px; /* Distance from the right side */
-    bottom: 20px; /* Distance from the bottom */
-    background-color: #25D366; /* WhatsApp green color */
+    right: 20px;
+    /* Distance from the right side */
+    bottom: 20px;
+    /* Distance from the bottom */
+    background-color: #25D366;
+    /* WhatsApp green color */
     color: white;
-    width: 50px; /* Adjust size */
+    width: 50px;
+    /* Adjust size */
     height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 50%; /* Makes it circular */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adds slight shadow */
+    border-radius: 50%;
+    /* Makes it circular */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    /* Adds slight shadow */
     cursor: pointer;
-    z-index: 1000; /* Ensures it's above other elements */
+    z-index: 1000;
+    /* Ensures it's above other elements */
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 /* Hover Effect */
 .whatsapp-notification:hover {
-    background-color: #1ebe57; /* Slightly darker green on hover */
-    transform: scale(1.1); /* Slightly enlarges on hover */
+    background-color: #1ebe57;
+    /* Slightly darker green on hover */
+    transform: scale(1.1);
+    /* Slightly enlarges on hover */
 }
 
 /* Icon Styling */
 .whatsapp-notification i {
     font-size: 24px;
+}
+
+
+/* category-images */
+.categories-container {
+    background-color: #c7726f26;
+    /* border-radius: 20px; */
+}
+
+.categories .category-btn {
+    padding: 0px 30px;
+}
+
+.categories-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.scroll-btn {
+    background-color: var(--basic-color);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.scroll-btn:hover {
+    background-color: #000000;
+}
+
+.categories-wrapper {
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 10px 0;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    flex-grow: 1;
+}
+
+.categories-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.categories {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    flex-wrap: nowrap;
+}
+
+.category-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    text-align: center;
+}
+
+.category-btn img {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.category-btn span {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+.category-btn:hover img {
+    transform: scale(1.1);
+}
+
+.products {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
