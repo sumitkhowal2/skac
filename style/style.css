@@ -90,34 +90,25 @@
 .whatsapp-notification {
     position: fixed;
     right: 20px;
-    /* Distance from the right side */
     bottom: 20px;
-    /* Distance from the bottom */
     background-color: #25D366;
-    /* WhatsApp green color */
     color: white;
     width: 50px;
-    /* Adjust size */
     height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    /* Makes it circular */
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    /* Adds slight shadow */
     cursor: pointer;
     z-index: 1000;
-    /* Ensures it's above other elements */
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 /* Hover Effect */
 .whatsapp-notification:hover {
     background-color: #1ebe57;
-    /* Slightly darker green on hover */
     transform: scale(1.1);
-    /* Slightly enlarges on hover */
 }
 
 /* Icon Styling */
@@ -129,7 +120,6 @@
 /* category-images */
 .categories-container {
     background-color: #c7726f26;
-    /* border-radius: 20px; */
 }
 
 .categories .category-btn {
