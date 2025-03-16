@@ -218,7 +218,7 @@
     transform: scale(1.05);
 }
 .card-img-top {
-    height: 200px; /* Set a fixed height */
-    object-fit: cover; /* Ensures images cover the area without distortion */
+    height: 200px; 
+    object-fit: cover;
   }
   
