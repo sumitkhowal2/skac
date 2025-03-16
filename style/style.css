@@ -351,6 +351,26 @@
     margin-top: 10px;
 }
 
+@media (max-width: 768px) {
+    .banner-text {
+        font-size: 1.5rem;
+    }
+
+    .banner-subtext {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner-text {
+        font-size: 1.2rem;
+    }
+
+    .banner-subtext {
+        font-size: 0.8rem;
+    }
+}
+
 .row-status {
     display: flex;
     flex-wrap: nowrap;
@@ -369,6 +389,7 @@
     align-items: center;
     justify-content: center;
     padding: 4px 0px 4px 14px;
+    cursor: pointer;
 }
 
 .border-left {
@@ -398,3 +419,5 @@
     scrollbar-width: none;
     -ms-overflow-style: none;
 }
+
+.status:hover img {}
